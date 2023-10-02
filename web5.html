@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Portfolio Website</title>
+   <link rel="stylesheet" href="web3.css">
+</head>
+<body>
+  
+
+     
+   
+  <center> <form onsubmit="sendEmail(event)">
+    <label for="name">Name client:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="age">form(vwo,havo,mavo):</label>
+    <input type="number" id="age" name="age" required>
+  
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject" required>
+      <option value="french">French</option>
+      <option value="math">Math</option>
+      <option value="science">Science</option>
+    </select>
+    <label for="phone">Phone number:</label>
+    <input type="tel" id="phone" name="phone" >
+    <label for="message">Additional info:</label>
+    <textarea id="message" name="message" required></textarea>
+  
+    <input type="submit" value="Send">
+  </form></center>
+  <center><p>Growing up bilingual in Belgium, I have a native-level proficiency in French. I am delighted to provide French tutoring services to high school students, whether they are beginners or looking to improve their existing language skills. My approach to language learning is interactive and immersive, focusing on practical communication skills and cultural understanding. Through personalized lessons, students will develop their reading, writing, listening, and speaking abilities in French, paving the way for future success in language learning and global experiences.</p></center>
+  
+   
+   
+   
+   <script src="email.js"> </script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   <script type="text/javascript">
+     (function() {
+       emailjs.init("i5nUe-xMEKGy8xW_Z");
+     })();
+   </script>
+  
+   
+   
+
+   
+   
+</body>
+</html>

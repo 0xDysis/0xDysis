@@ -1,0 +1,97 @@
+/* Reset default browser styles */
+body {
+    
+    background-image: linear-gradient(to bottom, #47585c, #c8d5bb);
+   
+    font-family: "Times New Roman", Times, serif;
+      
+      
+    margin: 0px;
+    padding: 0px;
+ }
+ 
+ /* Header styles */
+ header {
+    background-color: #47585c00;
+    color: #c8d5bb;
+    padding: 10px;
+    .resizedimage {
+      width: 6%; /* Adjust the width as needed */
+      height: 20% /* Maintain aspect ratio */}
+ }
+ .fade-in-text {
+   font-family: "Times New Roman", Times, serif;
+   font-size: 18px;
+   animation: fadeIn 5s;
+ } 
+ @keyframes fadeIn {
+   0% { opacity: 0; }
+   100% { opacity: 1; }}
+ 
+ nav ul {
+    list-style-type: none;
+ }
+ 
+ nav ul li {
+    display: inline;
+    margin-right: 10px;
+ }
+ 
+ nav ul li a {
+    color: #c8d5bb;
+    text-decoration: none;
+ }
+ 
+ /* Section styles */
+ section {
+    padding: 50px;
+ }
+ 
+ h1, h2, p {
+    color: #c8d5bb;
+
+    font-family: "Times New Roman", Times, serif;
+     
+    margin-bottom: 10px;
+ }
+ h3 { color:#47585c}
+ .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+ }
+ .image-container {
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .resized {
+   width: 20%;
+   height: 20%;
+ }
+ 
+ .rounded-image {
+   border-radius: 10px;
+ }
+ 
+ .fade-in {
+   opacity: 0;
+   animation: fadeIn 2s ease-in forwards;
+ }
+ 
+ @keyframes fadeIn {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ /* Footer styles */
+ footer {
+    background-color: #ff010100;
+    color: #f3060600;
+    margin: 400px;
+    padding: 0px;
+    text-align: center;
+ }
