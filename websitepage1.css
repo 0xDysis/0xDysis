@@ -8,6 +8,29 @@ body {
     margin: 200px;
     padding: 200px;
  }
+/* Default styles for all devices */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  width: 100%;
+}
+
+/* Styles for devices with a minimum width of 768px */
+@media screen and (min-width: 768px) {
+  .button {
+    width: 50%;
+  }
+}
+
+/* Styles for devices with a minimum width of 992px */
+@media screen and (min-width: 992px) {
+  .button {
+    width: 25%;
+  }
+}
  .resized-image {
     width: 100%; /* Adjust the width as needed */
     height: 100% /* Maintain aspect ratio */}
